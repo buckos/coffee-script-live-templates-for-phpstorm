@@ -1,2 +1,2 @@
 # coffee-script-live-templates-for-phpstorm
-CoffeeScipt live templates for PHPStorm
+CoffeeScipt live templates (schemes) for PHPStorm
