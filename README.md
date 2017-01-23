@@ -18,8 +18,16 @@ You can change it in: File -> Settings -> Editor -> Live Templates
 ajax      ajax
 con       console.log
 conv      console.log with variable
+each      each
+for       for
 fun       function
 funf      function with fat arrow
+if        if
+ife       if - else
+ifif      if - else if - else
+ifis      if with is
+ifisnt    if with isn't
 jq        jQuery selector
 pjaxr     Pjax reload
+switch    switch
 ```
