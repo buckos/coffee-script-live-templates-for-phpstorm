@@ -32,6 +32,6 @@ pjaxr     Pjax reload
 switch    switch
 ```
 ## Help
-Press Tab to completion and to stepping.
+Press **Tab** to completion and to stepping.
 
 ![alt text](http://i.imgur.com/lUEFmIh.gif =50x50)
