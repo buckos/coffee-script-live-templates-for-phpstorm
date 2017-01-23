@@ -31,3 +31,5 @@ jq        jQuery selector
 pjaxr     Pjax reload
 switch    switch
 ```
+## Help
+![alt text](http://i.imgur.com/lUEFmIh.gif =50x50)
