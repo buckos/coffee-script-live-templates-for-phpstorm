@@ -19,21 +19,22 @@
       <option name="CoffeeScript" value="true" />
     </context>
   </template>
-  <template name="jq" value="$('$NAME$').$END$" description="jQuery selector" toReformat="false" toShortenFQNames="true">
-    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="jq" value="$('$SELECTOR$').$END$" description="jQuery selector" toReformat="false" toShortenFQNames="true">
+    <variable name="SELECTOR" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="CoffeeScript" value="true" />
     </context>
   </template>
-  <template name="ajax" value="$.ajax&#10;&#9;url: '$URL$'&#10;&#9;type: 'GET'&#10;&#9;success: (result, status, xhr) =&gt;&#10;&#9;&#9;$END$" description="ajax" toReformat="false" toShortenFQNames="true">
+  <template name="ajax" value="$.ajax&#10;&#9;url: '$URL$'&#10;&#9;type: '$TYPE$'&#10;&#9;success: (result, status, xhr) =&gt;&#10;&#9;&#9;$END$" description="ajax" toReformat="false" toShortenFQNames="true">
     <variable name="URL" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TYPE" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="CoffeeScript" value="true" />
     </context>
   </template>
-  <template name="pjaxr" value="$.pjax.reload({replace: false, url: '$URL$', container: '#$ID$'})" description="Pjax reload" toReformat="false" toShortenFQNames="true">
+  <template name="pjaxr" value="$.pjax.reload({replace: false, url: '$URL$', container: '#$CONTAINER$'})" description="Pjax reload" toReformat="false" toShortenFQNames="true">
     <variable name="URL" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CONTAINER" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="CoffeeScript" value="true" />
     </context>
@@ -41,6 +42,69 @@
   <template name="conv" value="console.log '$TEXT$: ', $VAR$" description="console.log with variable" toReformat="false" toShortenFQNames="true">
     <variable name="TEXT" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="CoffeeScript" value="true" />
+    </context>
+  </template>
+  <template name="if" value="if $CONDITION$&#10;&#9;$END$" description="if with is" toReformat="false" toShortenFQNames="true">
+    <variable name="CONDITION" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="CoffeeScript" value="true" />
+    </context>
+  </template>
+  <template name="ifisnt" value="if $FIRST$ isnt $SECOND$&#10;&#9;$END$" description="if with isnt" toReformat="false" toShortenFQNames="true">
+    <variable name="FIRST" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="SECOND" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="CoffeeScript" value="true" />
+    </context>
+  </template>
+  <template name="ife" value="if $CONDITION$&#10;&#9;$IF$&#10;else&#10;&#9;$ELSE$" description="if else" toReformat="false" toShortenFQNames="true">
+    <variable name="CONDITION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="IF" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ELSE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="CoffeeScript" value="true" />
+    </context>
+  </template>
+  <template name="for" value="for $VAR$ in $ARRAY$&#10;&#9;$END$" description="for" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ARRAY" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="CoffeeScript" value="true" />
+    </context>
+  </template>
+  <template name="each" value="$VAR$.each ($PARAM$) =&gt;&#10;&#9;$END$" description="each" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PARAM" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="CoffeeScript" value="true" />
+    </context>
+  </template>
+  <template name="ifif" value="if $CONDITION$&#10;&#9;$IF$&#10;else if $CONDITION2$&#10;&#9;$ELSEIF$&#10;else&#10;&#9;$ELSE$" description="if - else if - else" toReformat="false" toShortenFQNames="true">
+    <variable name="CONDITION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="IF" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CONDITION2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ELSEIF" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ELSE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="CoffeeScript" value="true" />
+    </context>
+  </template>
+  <template name="switch" value="switch $SWITCH$&#10;&#9;when $WHEN$ then $THEN$&#10;&#9;when $WHEN2$ then $THEN2$&#10;&#9;else $ELSE$" description="switch" toReformat="false" toShortenFQNames="true">
+    <variable name="SWITCH" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="WHEN" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="THEN" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="WHEN2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="THEN2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ELSE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="CoffeeScript" value="true" />
+    </context>
+  </template>
+  <template name="ifis" value="if $FIRST$ is $SECOND$&#10;&#9;$END$" description="if with is" toReformat="false" toShortenFQNames="true">
+    <variable name="FIRST" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="SECOND" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="CoffeeScript" value="true" />
     </context>
