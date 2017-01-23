@@ -3,7 +3,7 @@
 
 > coffee-script.xml
 
-Copy the coffee-script.xml file to your templates directory (for example: *.PhpStorm2016.3/config/tempalates*).
+Copy the coffee-script.xml file to your templates directory (for example: *~/.PhpStorm2016.3/config/tempalates*).
 
 Or
 
