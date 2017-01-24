@@ -46,7 +46,7 @@
       <option name="CoffeeScript" value="true" />
     </context>
   </template>
-  <template name="if" value="if $CONDITION$&#10;&#9;$END$" description="if with is" toReformat="false" toShortenFQNames="true">
+  <template name="if" value="if $CONDITION$&#10;&#9;$END$" description="if" toReformat="false" toShortenFQNames="true">
     <variable name="CONDITION" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="CoffeeScript" value="true" />
@@ -59,7 +59,7 @@
       <option name="CoffeeScript" value="true" />
     </context>
   </template>
-  <template name="ife" value="if $CONDITION$&#10;&#9;$IF$&#10;else&#10;&#9;$ELSE$" description="if else" toReformat="false" toShortenFQNames="true">
+  <template name="ife" value="if $CONDITION$&#10;&#9;$IF$&#10;else&#10;&#9;$ELSE$" description="if - else" toReformat="false" toShortenFQNames="true">
     <variable name="CONDITION" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="IF" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="ELSE" expression="" defaultValue="" alwaysStopAt="true" />
