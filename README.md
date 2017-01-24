@@ -1,5 +1,5 @@
 # coffeescript-live-templates-for-phpstorm
-## CoffeeScipt live templates (schemes) for PHPStorm (or WebStorm)
+## CoffeeSrcipt live templates (schemes) for PHPStorm (or WebStorm)
 
 > coffee-script.xml
 
